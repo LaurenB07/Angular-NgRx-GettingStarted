@@ -36,7 +36,8 @@ import { EffectsModule } from '@ngrx/effects';
       maxAge: 25,
       logOnly: environment.production
     }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    StoreModule.forRoot({}, {})
   ],
   declarations: [
     AppComponent,
